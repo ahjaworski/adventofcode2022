@@ -32,10 +32,11 @@ def find_shared_item_three_elves(line1, line2, line3):
         if item in line2 and item in line3:
             return item
 
+
 sum_priorities_three = 0
 i = 0
 while i < len(lines):
-    shared_item = find_shared_item_three_elves(lines[i], lines[i+1], lines[i+2])
+    shared_item = find_shared_item_three_elves(lines[i], lines[i + 1], lines[i + 2])
     priority = get_priority(shared_item)
     sum_priorities_three += priority
     i += 3
